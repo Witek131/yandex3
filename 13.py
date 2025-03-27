@@ -13,6 +13,6 @@ ip=ip_network('172.30.0.0/255.254.0.0', 0)
 k=0
 for i in ip:
     s=f'{i:b}'
-    if s.count('1')%2:
+    if s.count('1')%12:
         k+=1
 print(k)

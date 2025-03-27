@@ -15,3 +15,9 @@ for a in product([0, 1], repeat=6):
     for per in permutations('abcd'):
         if all([f(**dict(zip(per, row))) == va for row, va in zip(rows, val)]):
             print(per)
+for a in range(2):
+    for b in range(2):
+        for c in range(2):
+            for d in range(2):
+                if c and (a or b) and (d >= b):
+                    print(a, b, c, d)
