@@ -5,7 +5,6 @@ from random import *
 
 def f1(n):
     m = 1000000
-    print(n)
     for w in n:
         s = 0
         for j in n:
